@@ -19,7 +19,7 @@
             />
         </router-link>
     </div>
-    
+    <router-view></router-view>
   </section>
 </template>
 
@@ -30,7 +30,8 @@ import ExperienceCard from '@/components/ExperienceCard.vue'
 export default {
     components:{ExperienceCard},
     props:{
-        id: {type: Number, required: true}
+        id: {type: Number, required: true},
+        slug: {type: String}
     },
     computed:{
         destination(){
